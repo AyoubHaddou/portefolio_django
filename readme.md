@@ -2,9 +2,9 @@ I. Ma presentation :
 
 - Etudiant developpeur IA en formation Microsoft by Simplon. 
 
-II. Mon portefolio 
+II. Mon portefolio : 
 
-- J'ai réalisé mon premier site web via le framework django 
+- J'ai réalisé mon premier site web via le framework django pour ce portefolio : https://portefolio-ayoub.herokuapp.com/
 
 - Vous retrouverez sur ce site mes principales réalisations que je vous relis ici :
 
