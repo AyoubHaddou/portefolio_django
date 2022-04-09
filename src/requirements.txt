@@ -1,5 +1,5 @@
 django 
 whitenoise 
 gunicorn
-# django_heroku
-# psycopg2
+django_heroku
+psycopg2
