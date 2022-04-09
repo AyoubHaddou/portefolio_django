@@ -4,9 +4,9 @@ I. Ma presentation :
 
 II. Mon portefolio : 
 
-- J'ai réalisé mon premier site web via le framework django pour ce portefolio : https://portefolio-ayoub.herokuapp.com/
+- Voici mon premier site web via le framework django qui constitue mon protefolio : https://portefolio-ayoub.herokuapp.com/
 
-- Vous retrouverez sur ce site mes principales réalisations que je vous relis ici :
+- Vous retrouverez sur ce site mes principales réalisations que je vous joint ici :
 
 - Projet prédiction de vélo fait avec streamlit : https://share.streamlit.io/yayahamour/project_bike/streamlit/app.py
 
