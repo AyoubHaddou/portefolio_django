@@ -36,11 +36,6 @@ ol, ul {
 	list-style: none;
 }
 
-#border_bot {
-border-bottom: 1px solid #000;
-width : 700px;
-}
-
 blockquote, q {
 	quotes: none;
 }
