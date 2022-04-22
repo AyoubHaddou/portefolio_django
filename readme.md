@@ -13,4 +13,3 @@ II. Mon portefolio :
 - Projet Scrapping + dashboard avec les 250 meilleurs films d'IMDB fait avec streamlit : http://makermovie.herokuapp.com/
 
 - Projet application-candidature pour un projet de formation fait en flask : http://candidature-simplon.herokuapp.com/
-
