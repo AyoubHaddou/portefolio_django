@@ -1,6 +1,7 @@
 
 <!DOCTYPE HTML>
 {% load static %}
+{% block content %}
 
 <!--
 	Hyperspace by HTML5 UP
@@ -42,9 +43,14 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
+							{% if email_send %}
+							<h2>Merci {{ subject }}! </h2>
+							<p>J'ai bien reçu ton mail et j'y répondrai rapidement, à très bientôt! </p>
+							{% endif %}
 							<h1>Ayoub HADDOU </h1>
 							<p>Sur cette page, apprenez à me connaître, découvrez mes compétences, mon portefolio, mon état d'esprit, et plus encore.</p>
 							<br>
+			
 							<ul class="actions">
 								<li><a href="#one" class="button scrolly"> Mon portefolio</a></li>
 							</ul>
@@ -219,23 +225,25 @@
 							<p>Ne pas hésitez à me contacter pour toutes propositions ou questionnements.</p>
 							<div class="split style1">
 								<section>
-									<form method="post" action="#">
+									<form method="post">
+										{% csrf_token %}
 										<div class="fields">
 											<div class="field half">
-												<label for="name">Nom</label>
-												<input type="text" name="name" id="name" />
+												<label for="subject">Nom</label>
+												{{ form.subject }}
 											</div>
 											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
+												<label for="from_email">Email</label>
+												{{ form.from_email }}
 											</div>
+									
 											<div class="field">
 												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="5"></textarea>
+												{{ form.message }}
 											</div>
 										</div>
 										<ul class="actions">
-											<li><a href="" class="button submit">Envoyer le message</a></li>
+											<li><a class="button submit">Envoyer le message</a></li>
 										</ul>
 									</form>
 								</section>
@@ -288,7 +296,8 @@
 		<script type="text/javascript" src="{% static 'js/util.js' %}"></script>
 		<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
 
-
-		{% block content %}{% endblock %}
+		
+		{% endblock %}
+		
 	</body>
 </html>

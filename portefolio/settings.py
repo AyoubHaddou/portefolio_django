@@ -136,6 +136,16 @@ PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = os.path.join(BASE_DIR,'static')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
+# Email config
+DEFAULT_FROM_EMAIL = 'bot.django.portefolio@gmail.com'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST  =  'smtp.sendgrid.net' 
+EMAIL_HOST_USER  = 'apikey'
+EMAIL_HOST_PASSWORD  =  "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"
+
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True 
+
 # Activate Django-Heroku.
 import django_heroku
 django_heroku.settings(locals())
