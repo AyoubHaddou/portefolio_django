@@ -16,7 +16,7 @@ def index(request):
         if form.is_valid():
             subject = form.cleaned_data['subject']
             from_email = form.cleaned_data['from_email']
-            message = form.cleaned_data['message'] + " \n" + from_email
+            message = form.cleaned_data['message'] + " \nMail send from : " + from_email
             try:
                 send_mail(subject, message, 'bot.django.portefolio@gmail.com', ['ayoubhaddou1@gmail.com'],fail_silently=False)
                 form.email_send = True 
