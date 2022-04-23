@@ -43,10 +43,17 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							{% if email_send %}
-							<h2>Merci {{ subject }}! </h2>
-							<p>J'ai bien reçu ton mail et j'y répondrai rapidement, à très bientôt! </p>
-							{% endif %}
+							{% if form.email_send %}
+							<div class="content">
+								<h2>Merci {{ form.subject.data }}! </h2>
+								<p>J'ai bien reçu ton email et j'y répondrai avec plaisir, à très bientôt! </p>
+								
+							</div>
+							<br>
+								{% endif %}
+
+					
+
 							<h1>Ayoub HADDOU </h1>
 							<p>Sur cette page, apprenez à me connaître, découvrez mes compétences, mon portefolio, mon état d'esprit, et plus encore.</p>
 							<br>
@@ -247,6 +254,8 @@
 										</ul>
 									</form>
 								</section>
+
+
 								<section>
 									<ul class="contact">
 										<li>

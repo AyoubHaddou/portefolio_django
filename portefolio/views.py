@@ -10,6 +10,7 @@ def index(request):
     
     if request.method == 'GET':
         form = ContactForm()
+        
     else:
         form = ContactForm(request.POST)
         if form.is_valid():
@@ -18,11 +19,11 @@ def index(request):
             message = form.cleaned_data['message'] + " \n" + from_email
             try:
                 send_mail(subject, message, 'bot.django.portefolio@gmail.com', ['ayoubhaddou1@gmail.com'],fail_silently=False)
+                form.email_send = True 
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
-
-            # render( request, 'index.html', {'email_send': True, 'subject' : subject})
-            return redirect('success')
+            # render( request, 'index.html', {'context' : context, 'form': form})
+            return render( request, 'index.html', {'form': form})
     return render( request, 'index.html', {'form': form})
 
 def successView(request):
