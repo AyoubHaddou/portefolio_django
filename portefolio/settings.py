@@ -141,7 +141,7 @@ DEFAULT_FROM_EMAIL = 'bot.django.portefolio@gmail.com'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST  =  'smtp.sendgrid.net' 
 EMAIL_HOST_USER  = 'apikey'
-EMAIL_HOST_PASSWORD  =  "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"
+EMAIL_HOST_PASSWORD  =  os.environ.get('SENDGRID_API_KEY')
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True 
 
