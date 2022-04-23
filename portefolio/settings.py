@@ -140,11 +140,6 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 DEFAULT_FROM_EMAIL = 'bot.django.portefolio@gmail.com'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
-# EMAIL_HOST  =  'smtp.sendgrid.net' 
-# EMAIL_HOST_USER  = os.environ.get('SENDGRID_API_NAME')
-# EMAIL_HOST_PASSWORD  =  os.environ.get('SENDGRID_API_KEY')
-
-
 
 from decouple import config
 EMAIL_HOST  =  'smtp.gmail.com' 
