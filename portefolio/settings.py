@@ -140,14 +140,14 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 DEFAULT_FROM_EMAIL = 'bot.django.portefolio@gmail.com'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
-EMAIL_HOST  =  'smtp.sendgrid.net' 
-EMAIL_HOST_USER  = os.environ.get('SENDGRID_API_NAME')
-EMAIL_HOST_PASSWORD  =  os.environ.get('SENDGRID_API_KEY')
+# EMAIL_HOST  =  'smtp.sendgrid.net' 
+# EMAIL_HOST_USER  = os.environ.get('SENDGRID_API_NAME')
+# EMAIL_HOST_PASSWORD  =  os.environ.get('SENDGRID_API_KEY')
 
-# # autre éssai depuis le ban :
-# EMAIL_HOST  =  'smtp.gmail.com' 
-# EMAIL_HOST_USER  = os.environ.get('user_gmail')
-# EMAIL_HOST_PASSWORD  =  os.environ.get('password_gmail')
+# autre éssai depuis le ban :
+EMAIL_HOST  =  'smtp.gmail.com' 
+EMAIL_HOST_USER  = os.environ.get('EMAIL_HOST_USER')
+EMAIL_HOST_PASSWORD  =  os.environ.get('EMAIL_HOST_PASSWORD')
 
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True 
