@@ -1881,13 +1881,14 @@ input, select, textarea {
 		line-height: 4.75em;
 		outline: 0;
 		padding: 0 3.75em;
-		margin: 2px;
+		margin: 1px;
 		position: relative;
 		text-align: center;
 		text-decoration: none;
 		text-transform: uppercase;
 		white-space: nowrap;
 	}
+
 
 		input[type="submit"]:after,
 		input[type="reset"]:after,
