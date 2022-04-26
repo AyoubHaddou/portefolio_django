@@ -23,7 +23,7 @@ def index(request):
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             # render( request, 'index.html', {'context' : context, 'form': form})
-            return render( request, 'index.html', {'form': ContactForm()})
+            return render( request, 'index.html', {'form': form})
     return render( request, 'index.html', {'form': form})
 
 def successView(request):
