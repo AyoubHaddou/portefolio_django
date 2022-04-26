@@ -12,7 +12,8 @@
 	padding: 5px;
 	border: 2px solid #ffffff21;
 	border-radius: 8px;
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px;
+	filter: invert(0.95);
 }
 
 #icon-section-2 {
@@ -22,7 +23,8 @@
 	padding: 10px;
 	border: 2px solid #ffffff21;
 	border-radius: 8px;
-	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+	box-shadow: rgba(0, 0, 0, 0.15) 0px 4px 12px;
+	filter: invert(0.95);
 }
 
 .div-notebook {
@@ -33,11 +35,12 @@
 }
 
 .div-notebook:hover #icon-section-1 {
-	background-color: rgba(248, 242, 242, 0.041);
+	background-color: rgba(3, 3, 3, 0.065);
  }
 
  .div-notebook:hover #icon-section-2 {
-	background-color: rgba(248, 242, 242, 0.041);
+	background-color: rgba(3, 3, 3, 0.065);
+
  }
 
 
