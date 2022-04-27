@@ -5,6 +5,14 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
+
+#p-notebook {
+	width: 100%;
+	max-width: 65%;
+	text-align: justify;
+}
+
+
 #icon-section-1 {
 	width: 80px;
 	height: 80px;
@@ -35,11 +43,11 @@
 }
 
 .div-notebook:hover #icon-section-1 {
-	background-color: rgba(3, 3, 3, 0.065);
+	background-color: rgba(3, 3, 3, 0.075);
  }
 
  .div-notebook:hover #icon-section-2 {
-	background-color: rgba(3, 3, 3, 0.065);
+	background-color: rgba(3, 3, 3, 0.075);
 
  }
 
@@ -2046,13 +2054,14 @@ input, select, textarea {
 		line-height: 4.75em;
 		outline: 0;
 		padding: 0 3.75em;
-		margin: 1px;
 		position: relative;
 		text-align: center;
 		text-decoration: none;
 		text-transform: uppercase;
 		white-space: nowrap;
-		margin-top: 5px;
+		margin-left: 20px;
+		margin-top: 0;
+		margin-bottom: 10px;
 	}
 
 
