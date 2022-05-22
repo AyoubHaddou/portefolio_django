@@ -38,6 +38,11 @@
 .div-notebook {
 	display: flex;
 	flex-direction: row;
+}
+
+.div-home {
+	display: flex;
+	flex-direction: row;
 	padding: 25px;
 	cursor: default;
 }

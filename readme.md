@@ -13,3 +13,5 @@ II. Mon portefolio :
 - Projet Scrapping + dashboard avec les 250 meilleurs films d'IMDB fait avec streamlit : http://makermovie.herokuapp.com/
 
 - Projet application-candidature pour un projet de formation fait en flask : http://candidature-simplon.herokuapp.com/
+
+- Projet NLP (Natural Language Processing) pour un coach de vie fictif : https://share.streamlit.io/ayoubhaddou/app_feeling_dashboard_nlp/main/app.py
